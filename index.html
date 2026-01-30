@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo MFS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="src/output.css">
 </head>
+
 <body>
-    <h1>What are you looking for</h1>
+    <section class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid place-content-center bg-[#f4f5f7]">
+                <div class="max-w-mCntnr mx-auto">
+                    <picture>
+                        <img src="assest/Login-Logo.svg" alt="Login-Logo.svg" class="mx-auto">
+                    </picture>
+
+                    <div class="relative -top-45 bg-white p-8 w-mCntnr rounded-3xl shadow-[0px_16px_24px_0px_rgba(0,0,0,0.3)]">
+                        <form action="#" method="post">
+                            <div class="space-y-3">
+                                <h3 class="font-Outfit font-medium text-base text-[#080808]">Mobile Number</h3>
+                                <input type="text" placeholder="Enter your number" class="font-Outfit font-light text-base text-[#969697] py-4 px-5 w-full bg-[#f4f5f7] rounded-full border border-[#dbdbdb] outline-none" id="num">
+                            </div>
+
+                            <div class="space-y-3 mt-4">
+                                <h3 class="font-Outfit font-medium text-base text-[#080808]">4 Digit Pin</h3>
+                                <input type="password" placeholder="Enter 4 Digit Pin" class="font-Outfit font-light text-base text-[#969697] py-4 px-5 w-full bg-[#f4f5f7] rounded-full border border-[#dbdbdb] outline-none" id="pin">
+                            </div>
+                        </form>
+
+                        <button type="button" class="bg-[#0874F2] duration-200 ease-in hover:bg-[#008BFF] py-3.5 w-full rounded-full mt-4 font-Outfit font-semibold text-xl text-white" id="btn">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

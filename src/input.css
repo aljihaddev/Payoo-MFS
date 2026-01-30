@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --spacing-mCntnr: 402px; 
+  --font-Outfit: "Outfit", sans-serif; 
+}
