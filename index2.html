@@ -1,12 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Payoo MFS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="src/output.css">
 </head>
+
 <body>
-    
-    <script src="js/script2.js"></script>
+    <!-- Phone Mockup Start -->
+    <div class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid bg-[#f4f5f7]">
+                <div class="">
+                    <div class="pb-6 bg-white rounded-b-3xl">
+
+                        <!-- Header Part Start -->
+                        <section>
+                            <div class="max-w-mCntnr mx-auto">
+
+                                <!-- Status Bar Start -->
+                                <div class="flex p-5 w-mCntnr gap-x-64.75 text-black">
+                                    <h3 class="font-Outfit font-bold">9:41</h3>
+                                    <div class="flex-row">
+                                        <i class="fa-solid fa-signal"></i>
+                                        <i class="fa-solid fa-wifi"></i>
+                                        <i class="fa-solid fa-battery-full"></i>
+                                    </div>
+                                </div>
+                                <!-- Status Bar End -->
+
+                                <div class="flex justify-between items-center px-1 py-2.5">
+                                    <div class="flex">
+                                        <picture>
+                                            <img src="assests/Logo-2.svg" alt="Logo-2.svg">
+                                        </picture>
+
+                                        <div class="font-Outfit space-y-1 ml-2">
+                                            <h3 class="text-[#080808] text-[18px] font-extrabold">$ 45,000</h3>
+                                            <p class="text-[#838383] text-[14px] font-normal">Available Balance</p>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" id="logout"
+                                        class="flex items-center px-3 py-2.25 rounded-lg cursor-pointer duration-300 border-2 border-[#d6d6d6] hover:border-[#77b3f8] hover:bg-[#e6f1fe] ease-in">
+                                        <picture>
+                                            <img src="assests/Logout.svg" alt="Logout.svg">
+                                        </picture>
+                                        <span class="ml-2 font-Outfit font-normal text-[14px] text-[#838383]">Log
+                                            Out</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="py-px px-full h-px bg-[#e6e6e6] mt-1.5"></div>
+                        </section>
+                        <!-- Header Part End -->
+
+                        <!-- Banner Part Start -->
+                        <section>
+                            <div class="max-w-mCntnr mx-auto">
+                                <div class="font-Outfit mt-5 space-y-3">
+                                    <h1 class="font-bold text-2xl leading-7.5 text-[#080808]">🔥 Welcome to
+                                        Payooo!</h1>
+                                    <p class="font-normal text-base leading-6.5 text-[#838383] w-92">Enjoy easy and
+                                        convenient financial services with us. Cashout charge is low and </p>
+                                </div>
+
+                                <!-- Card Button Part Start -->
+                                <div class="flex flex-wrap justify-between gap-y-4 mt-6">
+                                    <button id="addMoney"
+                                        class="w-30.75 px-2.75 py-5 border border-[#e6e6e6] rounded-xl cursor-pointer duration-300 ease-in hover:border-[#77b3f8] hover:bg-[#e6f1fe]">
+                                        <picture>
+                                            <img src="assests/Add-Money.svg" alt="Add-Money.svg" class="mx-auto">
+                                        </picture>
+                                        <h3 class="font-Outfit font-normal text-[14px] text-[#525252] text-center mt-2">
+                                            Add
+                                            Money
+                                        </h3>
+                                    </button>
+
+                                    <button id="cashout"
+                                        class="w-30.75 px-2.75 py-5 border border-[#e6e6e6] rounded-xl cursor-pointer duration-300 ease-in hover:border-[#77b3f8] hover:bg-[#e6f1fe]">
+                                        <picture>
+                                            <img src="assests/Cashout.svg" alt="Cashout.svg" class="mx-auto">
+                                        </picture>
+                                        <h3 class="font-Outfit font-normal text-[14px] text-[#525252] text-center mt-2">
+                                            Cashout</h3>
+                                    </button>
+
+                                    <button id="transfer"
+                                        class="w-30.75 px-2.75 py-5 border border-[#e6e6e6] rounded-xl cursor-pointer duration-300 ease-in hover:border-[#77b3f8] hover:bg-[#e6f1fe]">
+                                        <picture>
+                                            <img src="assests/Transfer-Money.svg" alt="Transfer-Money.svg" class="mx-auto">
+                                        </picture>
+                                        <h3 class="font-Outfit font-normal text-[14px] text-[#525252] text-center mt-2">
+                                            Transfer Money</h3>
+                                    </button>
+
+                                    <button id="bonus"
+                                        class="w-30.75 px-2.75 py-5 border border-[#e6e6e6] rounded-xl cursor-pointer duration-300 ease-in hover:border-[#77b3f8] hover:bg-[#e6f1fe]">
+                                        <picture>
+                                            <img src="assests/Get-Bonus.svg" alt="Get-Bonus.svg" class="mx-auto">
+                                        </picture>
+                                        <h3 class="font-Outfit font-normal text-[14px] text-[#525252] text-center mt-2">
+                                            Get Bonus</h3>
+                                    </button>
+
+                                    <button id="bill"
+                                        class="w-30.75 px-2.75 py-5 border border-[#e6e6e6] rounded-xl cursor-pointer duration-300 ease-in hover:border-[#77b3f8] hover:bg-[#e6f1fe]">
+                                        <picture>
+                                            <img src="assests/Pay-Bill.svg" alt="Pay-Bill.svg" class="mx-auto">
+                                        </picture>
+                                        <h3 class="font-Outfit font-normal text-[14px] text-[#525252] text-center mt-2">
+                                            Pay Bill</h3>
+                                    </button>
+
+                                    <button id="transactions"
+                                        class="w-30.75 px-2.75 py-5 border border-[#e6e6e6] rounded-xl cursor-pointer duration-300 ease-in hover:border-[#77b3f8] hover:bg-[#e6f1fe]">
+                                        <picture>
+                                            <img src="assests/Transaction.svg" alt="Transaction.svg" class="mx-auto">
+                                        </picture>
+                                        <h3 class="font-Outfit font-normal text-[14px] text-[#525252] text-center mt-2">
+                                            Transactions</h3>
+                                    </button>
+                                </div>
+                                <!-- Card Button Part End -->
+                            </div>
+                        </section>
+                        <!-- Banner Part End -->
+                    </div>
+
+                    <!-- Latest Payment Part Start -->
+                    <section id="ltstPay" class="pt-5">
+                        <div class="max-w-mCntnr mx-auto">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-Outfit font-semibold text-[18px] text-[#202020]">Latest Payment</h3>
+                                <button
+                                    class="cursor-pointer font-Outfit font-normal text-[14px] text-[#7e7e7f] duration-300 ease-in hover:text-[#0874f2] hover:scale-100 hover:font-semibold border border-transparent hover:border-[#77b3f8] hover:bg-[#e6f1fe] rounded-full py-2 px-4">View
+                                    All</button>
+                            </div>
+
+                            <div class="space-y-3 mt-2">
+                                <div
+                                    class="py-3 px-4 bg-white border border-[#e6e6e6] rounded-xl flex justify-between items-center">
+                                    <div class="flex justify-between items-center">
+                                        <picture class="p-3 bg-[#f2f2f2] rounded-full">
+                                            <img src="assests/Add-Money.svg" alt="Add-Money.svg">
+                                        </picture>
+
+                                        <div class="ml-2">
+                                            <h3 class="font-Outfit font-semibold text-base text-[#525252]">Electricity
+                                                Bill</h3>
+                                            <p class="font-Outfit font-normal text-xs text-[#525252]">Today 01:50 PM</p>
+                                        </div>
+                                    </div>
+
+                                    <button
+                                        class="cursor-pointer font-Outfit font-normal text-[14px] text-[#7e7e7f] duration-300 ease-in hover:text-[#0874f2] hover:scale-100 hover:font-semibold border border-transparent hover:border-[#77b3f8] hover:bg-[#e6f1fe] rounded-full py-1 px-1.5"><i
+                                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                                </div>
+
+                                <div
+                                    class="py-3 px-4 bg-white border border-[#e6e6e6] rounded-xl flex justify-between items-center">
+                                    <div class="flex justify-between items-center">
+                                        <picture class="p-3 bg-[#f2f2f2] rounded-full">
+                                            <img src="assests/Add-Money.svg" alt="Add-Money.svg">
+                                        </picture>
+
+                                        <div class="ml-2">
+                                            <h3 class="font-Outfit font-semibold text-base text-[#525252]">Bank Deposit
+                                            </h3>
+                                            <p class="font-Outfit font-normal text-xs text-[#525252]">Today 01:48 PM</p>
+                                        </div>
+                                    </div>
+
+                                    <button
+                                        class="cursor-pointer font-Outfit font-normal text-[14px] text-[#7e7e7f] duration-300 ease-in hover:text-[#0874f2] hover:scale-100 hover:font-semibold border border-transparent hover:border-[#77b3f8] hover:bg-[#e6f1fe] rounded-full py-1 px-1.5"><i
+                                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                                </div>
+
+                                <div
+                                    class="py-3 px-4 bg-white border border-[#e6e6e6] rounded-xl flex justify-between items-center">
+                                    <div class="flex justify-between items-center">
+                                        <picture class="p-3 bg-[#f2f2f2] rounded-full">
+                                            <img src="assests/Add-Money.svg" alt="Add-Money.svg">
+                                        </picture>
+
+                                        <div class="ml-2">
+                                            <h3 class="font-Outfit font-semibold text-base text-[#525252]">Mobile
+                                                Recharge</h3>
+                                            <p class="font-Outfit font-normal text-xs text-[#525252]">Today 01:46 PM</p>
+                                        </div>
+                                    </div>
+
+                                    <button
+                                        class="cursor-pointer font-Outfit font-normal text-[14px] text-[#7e7e7f] duration-300 ease-in hover:text-[#0874f2] hover:scale-100 hover:font-semibold border border-transparent hover:border-[#77b3f8] hover:bg-[#e6f1fe] rounded-full py-1 px-1.5"><i
+                                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                                </div>
+
+                                <div
+                                    class="py-3 px-4 bg-white border border-[#e6e6e6] rounded-xl flex justify-between items-center">
+                                    <div class="flex justify-between items-center">
+                                        <picture class="p-3 bg-[#f2f2f2] rounded-full">
+                                            <img src="assests/Add-Money.svg" alt="Add-Money.svg">
+                                        </picture>
+
+                                        <div class="ml-2">
+                                            <h3 class="font-Outfit font-semibold text-base text-[#525252]">Gas
+                                                Bill</h3>
+                                            <p class="font-Outfit font-normal text-xs text-[#525252]">Today 01:44 PM</p>
+                                        </div>
+                                    </div>
+
+                                    <button
+                                        class="cursor-pointer font-Outfit font-normal text-[14px] text-[#7e7e7f] duration-300 ease-in hover:text-[#0874f2] hover:scale-100 hover:font-semibold border border-transparent hover:border-[#77b3f8] hover:bg-[#e6f1fe] rounded-full py-1 px-1.5"><i
+                                            class="fa-solid fa-ellipsis-vertical"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Latest Payment Part End -->
+
+                    <!-- Add Money Part Start -->
+                    <Section id="addMoneyOptn" class="hidden">
+                        <div class="max-w-mCntnr mx-auto">
+                            <h3 class="font-Outfit font-semibold text-[18px] text-[#202020] mt-5">Add Money</h3>
+
+                            <div class="p-6 bg-white rounded-3xl mt-2">
+                                <form action="#" method="post">
+                                    <div id="addMoneyFormOne">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Select a
+                                                Bank</h3>
+                                            <input id="addMoneyInOne" type="text" placeholder="Select a Bank"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Bank
+                                                Account Number</h3>
+                                            <input id="addMoneyInTwo" type="text"
+                                                placeholder="Enter 10 to 12 digit account number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="addMoneyNextBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]">Next
+                                            <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+
+                                    <div id="addMoneyFormTwo" class="hidden">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Amount to
+                                                Add
+                                            </h3>
+                                            <input id="addMoneyInThree" type="text"
+                                                placeholder="Add an amount to withdraw"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Pin Number
+                                            </h3>
+                                            <input id="addMoneyInFour" type="password"
+                                                placeholder="Enter 4 digit pin number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="addMoneyBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]"><i
+                                                class="fa-solid fa-plus"></i> Add Money<i
+                                                class="fa-solid fa-dollar-sign"></i></button>
+                                    </div>
+
+                                    <h3 id="addMoneyErrorOne"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Input field must be filled!</h3>
+
+                                    <h3 id="addMoneyErrorTwo"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Invalid Credentials!</h3>
+                                </form>
+                            </div>
+                        </div>
+                    </Section>
+                    <!-- Add Money Part End -->
+
+                    <!-- Cashout Part Start -->
+                    <Section id="cashoutOptn" class="hidden">
+                        <div class="max-w-mCntnr mx-auto">
+                            <h3 class="font-Outfit font-semibold text-[18px] text-[#202020] mt-5">Cash Out</h3>
+
+                            <div class="p-6 bg-white rounded-3xl mt-2">
+                                <form action="#" method="post">
+                                    <div id="cashoutFormOne">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Agent Number</h3>
+                                            <input id="cashoutInOne" type="text" placeholder="Enter 11 digit number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Amount</h3>
+                                            <input id="cashoutInTwo" type="text"
+                                                placeholder="Enter amount to withdraw"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="cashoutNextBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]">Next
+                                            <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+
+                                    <div id="cashoutFormTwo" class="hidden">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Pin Number
+                                            </h3>
+                                            <input id="cashoutInThree" type="password"
+                                                placeholder="Enter 4 digit pin number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="cashoutBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]"><i
+                                                class="fa-solid fa-dollar-sign"></i> Withdraw Money<i
+                                                class="fa-solid fa-dollar-sign"></i> </button>
+                                    </div>
+
+                                    <h3 id="cashoutErrorOne"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Input field must be filled!</h3>
+
+                                    <h3 id="cashoutErrorTwo"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Invalid Credentials!</h3>
+                                </form>
+                            </div>
+                        </div>
+                    </Section>
+                    <!-- Cashout Part End -->
+
+                    <!-- Transfer Money Part Start -->
+                    <Section id="transferOptn" class="hidden">
+                        <div class="max-w-mCntnr mx-auto">
+                            <h3 class="font-Outfit font-semibold text-[18px] text-[#202020] mt-5">Transfer Money</h3>
+
+                            <div class="p-6 bg-white rounded-3xl mt-2">
+                                <form action="#" method="post">
+                                    <div id="transferFormOne">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">User Account Number</h3>
+                                            <input id="transferInOne" type="text" placeholder="Enter 11 digit number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Amount</h3>
+                                            <input id="transferInTwo" type="text"
+                                                placeholder="Enter amount to transfer"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="transferNextBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]">Next
+                                            <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+
+                                    <div id="transferFormTwo" class="hidden">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Pin Number
+                                            </h3>
+                                            <input id="transferInThree" type="password"
+                                                placeholder="Enter 4 digit pin number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="transferBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]">Send Now <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+
+                                    <h3 id="transferErrorOne"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Input field must be filled!</h3>
+
+                                    <h3 id="transferErrorTwo"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Invalid Credentials!</h3>
+                                </form>
+                            </div>
+                        </div>
+                    </Section>
+                    <!-- Transfer Money Part End -->
+
+                    <!-- Get Bonus Part Start -->
+                    <Section id="bonusOptn" class="hidden">
+                        <div class="max-w-mCntnr mx-auto">
+                            <h3 class="font-Outfit font-semibold text-[18px] text-[#202020] mt-5">Get Bonus</h3>
+
+                            <div class="p-6 bg-white rounded-3xl mt-2">
+                                <form action="#" method="post">                                    
+                                    <div id="bonusForm">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Enter Bonus Coupon
+                                            </h3>
+                                            <input id="bonusIn" type="text"
+                                                placeholder="Enter your coupon"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="bonusBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]">Get Bonus <i class="fa-solid fa-sack-dollar"></i></button>
+                                    </div>
+
+                                    <h3 id="bonusError"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Input field must be filled!</h3>
+                                </form>
+                            </div>
+                        </div>
+                    </Section>
+                    <!-- Get Bonus Part End -->
+
+                    <!-- Pay Bill Part Start -->
+                    <Section id="billOptn" class="hidden">
+                        <div class="max-w-mCntnr mx-auto">
+                            <h3 class="font-Outfit font-semibold text-[18px] text-[#202020] mt-5">Pay Bill</h3>
+
+                            <div class="p-6 bg-white rounded-3xl mt-2">
+                                <form action="#" method="post">
+                                    <div id="billFormOne">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Select To Pay</h3>
+                                            <input id="billInOne" type="text" placeholder="Select a Bank"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Biller Account Number</h3>
+                                            <input id="billInTwo" type="text"
+                                                placeholder="Biller Account Number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="billNextBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]">Next
+                                            <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+
+                                    <div id="billFormTwo" class="hidden">
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Amount an to
+                                                Pay
+                                            </h3>
+                                            <input id="billInThree" type="text"
+                                                placeholder="Add an Amount to Pay"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <h3 class="font-Outfit font-medium text-base text-[#525252] mb-3">Pin Number
+                                            </h3>
+                                            <input id="billInFour" type="password"
+                                                placeholder="Enter 4 digit pin number"
+                                                class="font-Outfit placeholder:font-light text-base placeholder:text-[#969697] text-[#525252] font-medium rounded-full outline-none bg-[#f4f5f7] py-4 px-5 w-full">
+                                        </div>
+
+                                        <button id="billBtn" type="button"
+                                            class="font-Outfit font-semibold text-[20px] text-white py-3.5 bg-[#0874f2] rounded-full w-full cursor-pointer duration-100 ease-in hover:bg-[#1a6849]">Pay Now <i class="fa-solid fa-file-invoice-dollar"></i></button>
+                                    </div>
+
+                                    <h3 id="billErrorOne"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Input field must be filled!</h3>
+
+                                    <h3 id="billErrorTwo"
+                                        class="text-red-500 font-Outfit font-bold text-base tracking-wider text-center pt-2 hidden">
+                                        Invalid Credentials!</h3>
+                                </form>
+                            </div>
+                        </div>
+                    </Section>
+                    <!-- Pay Bill Part End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phone Mockup End -->
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

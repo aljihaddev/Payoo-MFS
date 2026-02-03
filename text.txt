@@ -1,0 +1,12 @@
+Login Page
+Number: 01234567890
+PIN: 1234
+
+
+Add Money
+Bank Name: American Express
+Account Number: 123456789012
+PIN: 1234
+
+
+Other's PIN: 1234
